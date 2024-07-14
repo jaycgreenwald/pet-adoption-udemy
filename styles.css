@@ -1,0 +1,275 @@
+body,
+html {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.top-section-wrapper {
+  background-color: #001d37;
+}
+
+.top-section {
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 1066px;
+  overflow: hidden;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+}
+
+.top-section h1 {
+  font-size: 4rem;
+  line-height: 97.3%;
+  margin: 0;
+  max-width: 525px;
+}
+
+.actual-top-content {
+  z-index: 5;
+  position: relative;
+}
+
+.intro-text {
+  font-size: 1.25rem;
+  line-height: 169.3%;
+  margin: 1rem 0;
+  max-width: 435px;
+}
+
+.intro-buttons {
+  margin-bottom: 70px;
+}
+
+.our-btn {
+  background-color: #475aff;
+  border: 2px solid #475aff;
+  border-radius: 1000px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 13px 25px;
+  text-decoration: none;
+  transition: background-color .3s ease-out, border .3s ease-out, color .3s ease-out;
+}
+
+.our-btn:hover {
+  background-color: #2e40e2;
+  border: 2px solid #2e40e2;
+}
+
+.our-btn--outline {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.our-btn--outline:hover {
+  background-color: #fff;
+  color: #475aff;
+  border: 2px solid #fff;
+}
+
+.utility-mr {
+  margin-right: 10px;
+}
+
+.intro-features {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+@media screen and (min-width: 580px) {
+  .intro-features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .intro-features {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.intro-feature {
+  border: 1px solid rgba(255, 255, 255, .24);
+  padding: 33px 25px;
+}
+
+.intro-feature p {
+  font-size: 1.0625rem;
+  margin: 0;
+}
+
+.intro-feature h2 {
+  font-size: 1.5rem;
+  margin: 31px 0 3px 0;
+}
+
+.circle {
+  background-color: #d660ff;
+  border-radius: 50%;
+  filter: blur(150px);
+  height: 617px;
+  opacity: .85;
+  position: absolute;
+  right: -390px;
+  top: 62px;
+  width: 617px;
+}
+
+.circle-blue {
+  background: #6079ff;
+  border-radius: 50%;
+  filter: blur(150px);
+  height: 617px;
+  left: -123px;
+  opacity: .85;
+  position: absolute;
+  top: -365px;
+  width: 617px;
+}
+
+.page-section {
+  background-color: #fff;
+  padding: 70px 16px;
+}
+
+.page-section-inner {
+  margin: 0 auto;
+  max-width: 1066px;
+}
+
+.page-section-title {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.pet-filter {
+  color: #9f9f9f;
+  font-size: 1.15rem;
+}
+
+.pet-filter button {
+  background-color: transparent;
+  color: #9f9f9f;
+  border: none;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.15rem;
+}
+
+.site-footer {
+  color: #a6a6a6;
+  font-size: .875rem;
+  margin: 0;
+  padding: 0 0 65px 0;
+  text-align: center;
+}
+
+.list-of-pets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  column-gap: 34px;
+  row-gap: 16px;
+}
+
+.pet-card {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  border-radius: 20px;
+  border: 1px solid #f3f3f3;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
+}
+
+.pet-card-photo {
+  order: 1;
+  grid-row: 1;
+}
+
+.pet-card-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.pet-card-text {
+  padding: 18px 16px;
+}
+
+.pet-card-text h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+.pet-description {
+  font-size: .9rem;
+  margin: 0 0 1rem 0;
+  color: #626262;
+  line-height: 150%;
+}
+
+.pet-age {
+  color: #a2a2a2;
+  font-size: .85rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+
+  .pet-description {
+    font-size: 1rem;
+  }
+  
+  .pet-card {
+    grid-template-columns: 165px 1fr;
+  }
+
+  .pet-card-text {
+    padding: 21px 29px;
+  }
+
+  .list-of-pets {
+    row-gap: 28px;
+  }
+
+  .pet-filter {
+    font-size: 1.375rem;
+  }
+
+  .pet-filter button {
+    font-size: 1.375rem;
+  }
+
+  .page-section-title {
+    font-size: 5.31rem;
+  }
+
+  .page-section {
+    padding: 130px 16px;
+  }
+
+  .intro-buttons {
+    margin-bottom: 129px;
+  }
+
+  .top-section h1 {
+    font-size: 6.25rem;
+  }
+
+  .top-section {
+    padding-bottom: 139px;
+    padding-top: 139px;
+  }
+}
