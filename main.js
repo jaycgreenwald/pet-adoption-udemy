@@ -20,6 +20,9 @@ async function petsArea() {
   petsData.forEach(pet => {    //"pet" is like the variable that holds each itteration of the array?
     const clone = template.content.cloneNode(true)
 
+    // add species data to pet card
+    clone.querySelector(".pet-card").dataset.species = pet.species
+
     clone.querySelector("h3").textContent = pet.name //get the h3 tag to contain the pet name
     clone.querySelector(".pet-description").textContent = pet.description
     clone.querySelector(".pet-age").textContent = createAgeText(pet.birthYear)
@@ -62,5 +65,13 @@ function handleButtonClick(e) {                 // e for event - arbitrary name
   e.target.classList.add("active")
 
   // actually filter results
-  
+  const currentFilter = e.target.dataset.filter
+  document.querySelectorAll(".pet-card").forEach(el => {
+    if (currentFilter == el.dataset.species || currentFilter == "all") {
+      el.style.display = "grid"
+    } else {
+      el.style.display = "none"
+    }
+
+  })
 }
