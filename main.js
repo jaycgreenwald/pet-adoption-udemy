@@ -15,7 +15,7 @@ async function start() {
 start()
 
 async function petsArea() {
-  const petsPromise = await fetch("https://learnwebcode.github.io/bootcamp-pet-data/pets.json")
+  const petsPromise = await fetch("https://creative-twilight-01af28.netlify.app/.netlify/functions/pets")
   const petsData = await petsPromise.json()
   petsData.forEach(pet => {    //"pet" is like the variable that holds each itteration of the array?
     const clone = template.content.cloneNode(true)
